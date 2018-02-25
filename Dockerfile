@@ -1,7 +1,7 @@
 FROM alpine:3.7
 LABEL maintainer="Okky Hendriansyah <okky.htf@gmail.com>"
 
-RUN apk add --no-cache tini beanstalkd \
+RUN apk add --no-cache tini tzdata beanstalkd \
  && mkdir -p /data/binlog/
 
 EXPOSE 11300
